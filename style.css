@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
-}
+} */
 
 /* *,
 *::before,
@@ -16,49 +16,32 @@ html {
   box-sizing: inherit;
 } */
 
-main,
-.signup {
-  background-color: #3882f6;
-  height: 200px;
-  width: 100%;
-}
-
-.quote {
-  background-color: #e5e7eb;
-  height: 200px;
-  width: 100%;
-}
-
 body,
 footer {
+  background-color: #1f2937;
+}
+
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1f2937;
 }
 
 header {
   display: flex;
   flex-direction: column;
-  padding: 18px;
+  padding: 1rem;
   gap: 4rem;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 22px;
 }
 
-nav,
-h1,
-a,
-p {
-  color: white;
-}
-
-p {
-  font-size: small;
+nav > h1 {
+  font-size: 24px;
+  color: #f9faf8;
 }
 
 ul {
@@ -69,12 +52,38 @@ ul {
 
 a {
   text-decoration-line: none;
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
 .intro {
   display: flex;
+  gap: 20px;
 }
 
+.container1 {
+  flex: 1;
+}
+
+.container1 > button {
+  background-color: #3882f6;
+  color: white;
+  border-radius: 5px;
+  padding: 6px 26px;
+  border-style: none;
+}
+
+.container1 > h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+
+.container1 > p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin: 0.5rem 0;
+}
 img {
   border: 1px solid white;
 }
