@@ -16,17 +16,19 @@
   box-sizing: inherit;
 } */
 
-header,
-footer {
-  background-color: #1f2937;
-}
-
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #1f2937;
+  width: 100%;
 }
 
+/* header,
+footer {
+  background-color: #1f2937;
+  width: 100%;
+} */
 /* Header / Hero */
 
 header {
@@ -34,6 +36,7 @@ header {
   flex-direction: column;
   padding: 1rem;
   gap: 4rem;
+  width: 70%;
 }
 
 nav {
@@ -97,8 +100,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3rem;
+  padding: 4rem 3rem;
   gap: 4rem;
+  background-color: white;
+  width: 100%;
 }
 
 .container-card {
@@ -122,4 +127,28 @@ main {
 
 .cards > img {
   border-radius: 1rem;
+}
+
+/* Quote */
+
+.quote {
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 10rem;
+  gap: 0.5rem;
+}
+
+.quote > p {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+  width: 70%;
+}
+
+p.ref {
+  text-align: end;
+  font-size: 20px;
+  font-weight: 900;
 }
