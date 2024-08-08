@@ -31,13 +31,13 @@ footer {
 } */
 /* Header / Hero */
 
-header {
+/* header {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   gap: 4rem;
   width: 70%;
-}
+} */
 
 nav {
   display: flex;
@@ -133,22 +133,68 @@ main {
 
 .quote {
   background-color: #e5e7eb;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  /* display: flex; */
+  /* align-items: center; */
+  /* flex-direction: column; */
   padding: 5rem 10rem;
   gap: 0.5rem;
 }
 
-.quote > p {
+.quote p {
+  display: flex;
   font-size: 36px;
   font-style: italic;
   color: #1f2937;
-  width: 70%;
+  /* width: 70%; */
 }
 
 p.ref {
-  text-align: end;
+  display: flex;
+  justify-content: end;
   font-size: 20px;
   font-weight: 900;
+}
+
+/* Sign Up */
+
+.signup {
+  background-color: white;
+  width: 100%;
+  padding: 5rem 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.con-signup {
+  background-color: #3882f6;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 6rem;
+  flex-wrap: wrap;
+  width: auto;
+  gap: 1rem;
+}
+
+.signup-text {
+  padding: 0.5rem;
+  color: white;
+}
+
+.signup-text p {
+  font-weight: 200;
+}
+
+.con-button {
+  display: flex;
+  align-items: center;
+}
+
+.con-button > button {
+  background-color: #3882f6;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  border: 1px solid whitesmoke;
+  font-weight: bold;
 }
